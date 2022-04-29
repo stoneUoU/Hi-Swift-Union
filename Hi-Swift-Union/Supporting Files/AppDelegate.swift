@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import Hi_Router_Module
+import Hi_Home_Module
+import Hi_Personal_Module
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // register
+        HiHomeModule.registerPages();
+        HiPersonalModule.registerPages();
         
         self.initWindow();
         // Override point for customization after application launch.
@@ -25,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         animate.duration = 1.0;
         self.window?.layer.add(animate, forKey: nil)
         self.window?.makeKeyAndVisible()
-        let tabbarView = ViewController();
+        let tabbarView = HiTabbarViewController();
         self.window?.rootViewController = tabbarView;
     }
     func applicationWillResignActive(_ application: UIApplication) {
