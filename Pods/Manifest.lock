@@ -7,8 +7,16 @@ PODS:
     - Hi-Kit-Module
     - Hi-Router-Module
     - SnapKit
+    - SwiftyJSON
   - Hi-Kit-Module (0.1.0):
     - Hi-Helper-Module
+    - Hi-Router-Module
+    - Kingfisher
+    - SnapKit
+  - Hi-Network-Module (0.1.0):
+    - Alamofire
+    - Moya
+    - SwiftyJSON
   - Hi-Personal-Module (0.1.0):
     - Hi-Kit-Module
     - Hi-Router-Module
@@ -31,6 +39,7 @@ DEPENDENCIES:
   - Hi-Helper-Module (from `../Hi-Helper-Module`)
   - Hi-Home-Module (from `../Hi-Home-Module`)
   - Hi-Kit-Module (from `../Hi-Kit-Module`)
+  - Hi-Network-Module (from `../Hi-Network-Module`)
   - Hi-Personal-Module (from `../Hi-Personal-Module`)
   - Hi-Router-Module (from `../Hi-Router-Module`)
   - IQKeyboardManager (= 6.4.2)
@@ -60,6 +69,8 @@ EXTERNAL SOURCES:
     :path: "../Hi-Home-Module"
   Hi-Kit-Module:
     :path: "../Hi-Kit-Module"
+  Hi-Network-Module:
+    :path: "../Hi-Network-Module"
   Hi-Personal-Module:
     :path: "../Hi-Personal-Module"
   Hi-Router-Module:
@@ -67,11 +78,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Hi-Helper-Module: 2832e5d4365c3c241b67db0960a31d90e20e2839
-  Hi-Home-Module: 95809ad1f5485f2478209482c8e94ec77a3c7e66
-  Hi-Kit-Module: 744d75f9b6e093b7c5392831aa7faf9456a264ab
-  Hi-Personal-Module: 906130c0a894998aa0cb4b7fd6c5d61d59ba500a
-  Hi-Router-Module: e675099ef8a2bae600523075bad1d9460a60c3c7
+  Hi-Helper-Module: 4314df10a30324d122eaa253784b5240741fc9e1
+  Hi-Home-Module: ce664c11e34722495b998853601228ddbf7ebdb3
+  Hi-Kit-Module: 53107f4cd9ab25e74e1fac8bc21ff1f4f9b679a3
+  Hi-Network-Module: 059bbadd661f31456da4a64b575e5566e9312bf2
+  Hi-Personal-Module: 18d39c9714b46047768bc905626dcfa2a639fa52
+  Hi-Router-Module: 13474c2e498b7fc64919328109943169ed7ea482
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -81,6 +93,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: a28a3503a7eb3ff0460919ad2e07b0e0f6c89930
+PODFILE CHECKSUM: 1e90ea3ed521f2378b48d1b48573b5d86f43b152
 
 COCOAPODS: 1.11.3

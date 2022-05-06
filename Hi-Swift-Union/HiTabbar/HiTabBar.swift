@@ -40,14 +40,14 @@ class HiTabBar: UITabBar {
     }()
     
     @objc lazy var leftShadowView: UIView = {
-        let leftShadowView = UIView.init(frame:CGRect.init(x: 0, y: -4, width: (SCREENWIDTH - middleButtonWidth)/2, height: 8.0));
+        let leftShadowView = UIView.init(frame:CGRect.init(x: 0, y: -4, width: (HiSCREENWIDTH - middleButtonWidth)/2, height: 8.0));
         let uiimage:UIImage = UIImage.init(named: "ylz_tabbar_custom_line")!
         leftShadowView.layer.contents = uiimage.cgImage;
         return leftShadowView
     }()
     
     @objc lazy var rightShadowView: UIView = {
-        let rightShadowView = UIView.init(frame:CGRect.init(x: (SCREENWIDTH - middleButtonWidth)/2+middleButtonWidth, y: -4, width: (SCREENWIDTH - middleButtonWidth)/2, height: 8.0));
+        let rightShadowView = UIView.init(frame:CGRect.init(x: (HiSCREENWIDTH - middleButtonWidth)/2+middleButtonWidth, y: -4, width: (HiSCREENWIDTH - middleButtonWidth)/2, height: 8.0));
         let uiimage:UIImage = UIImage.init(named: "ylz_tabbar_custom_line")!
         rightShadowView.layer.contents = uiimage.cgImage;
         return rightShadowView
@@ -93,7 +93,7 @@ class HiTabBar: UITabBar {
         let tabBarClass: AnyClass! = self.swiftClassFromString(className: "UITabBarButton");
         for view in subviews {
             if view == qrCodeView {
-                view.size = CGSize.init(width: middleButtonWidth, height: TabBarH+24)
+                view.size = CGSize.init(width: middleButtonWidth, height: HiTabBarH+24)
                 view.top = -24
                 view.centerX = self.frame.size.width / 2
             } else if view.isKind(of: tabBarClass) {

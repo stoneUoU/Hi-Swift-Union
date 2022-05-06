@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @objc lazy var excuteButton: UIButton = {
         let excuteButton = UIButton.init(type: UIButton.ButtonType.custom)
-        excuteButton.frame = CGRect.init(x: 16, y: (SCREENHEIGHT - 44)/2, width: SCREENWIDTH - 32, height: 44);
+        excuteButton.frame = CGRect.init(x: 16, y: (HiSCREENHEIGHT - 44)/2, width: HiSCREENWIDTH - 32, height: 44);
         excuteButton.setTitle("Swift Project", for: UIControl.State.normal)
         excuteButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         excuteButton.setTitleColor(.black, for: .normal)

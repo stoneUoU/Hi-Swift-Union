@@ -18,7 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Hi-Helper-Module/Classes/**/*",
+  "source_files": "Hi-Helper-Module/Classes/**/*.{h,m,swift}",
+  "resources": [
+    "Hi-Helper-Module/**/*.xcassets"
+  ],
   "dependencies": {
     "MBProgressHUD": [
 

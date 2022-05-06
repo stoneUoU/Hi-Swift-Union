@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "OCFile.h"
 
 FOUNDATION_EXPORT double Hi_Personal_ModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char Hi_Personal_ModuleVersionString[];

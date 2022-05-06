@@ -18,7 +18,10 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Hi-Personal-Module/Classes/**/*",
+  "source_files": "Hi-Personal-Module/Classes/**/*.{h,m,swift}",
+  "resources": [
+    "Hi-Personal-Module/**/*.xcassets"
+  ],
   "dependencies": {
     "Hi-Router-Module": [
 

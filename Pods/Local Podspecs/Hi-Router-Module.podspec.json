@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Hi-Router-Module/Classes/**/*"
+  "source_files": "Hi-Router-Module/Classes/**/*.{h,m,swift}"
 }

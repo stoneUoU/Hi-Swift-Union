@@ -45,7 +45,7 @@ class HiTabbarViewController: UITabBarController {
     
     private func addViewController(_ vc: UIViewController, _ title: String, _ imageN: String) {
         
-        let navVC = HiNavigationController(rootViewController: vc)
+        let navVC = HiBaseNavigationController(rootViewController: vc)
         vc.tabBarItem.image = UIImage(named: imageN)?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named: imageN + "_selected")?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.title = title

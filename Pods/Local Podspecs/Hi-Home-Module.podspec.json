@@ -18,7 +18,12 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Hi-Home-Module/Classes/**/*",
+  "source_files": "Hi-Home-Module/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "Hi-Home-Module": [
+      "Hi-Home-Module/Resource/HiHomeModule.xcassets"
+    ]
+  },
   "dependencies": {
     "Hi-Router-Module": [
 
@@ -27,6 +32,9 @@
 
     ],
     "SnapKit": [
+
+    ],
+    "SwiftyJSON": [
 
     ]
   }

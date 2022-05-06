@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'Hi-Swift-Union' do
     use_frameworks!
+#    use_modular_headers!
     inhibit_all_warnings!
 
     pod 'Hi-Home-Module', :path=>"../Hi-Home-Module"
@@ -13,6 +14,7 @@ target 'Hi-Swift-Union' do
     pod 'Hi-Helper-Module', :path=>"../Hi-Helper-Module"
     
     pod 'Hi-Router-Module', :path=>"../Hi-Router-Module"
+    pod 'Hi-Network-Module', :path=>"../Hi-Network-Module"
 
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'SnapKit', '~> 4.0.0'
