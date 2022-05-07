@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "HiOCAssetsHelper.h"
 
 FOUNDATION_EXPORT double Hi_Helper_ModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char Hi_Helper_ModuleVersionString[];

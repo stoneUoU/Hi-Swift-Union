@@ -1,10 +1,10 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/stoneUoU/Hi-Swift-Repo.git'
 platform :ios, '9.0'
 
 target 'Hi-Swift-Union' do
     use_frameworks!
-#    use_modular_headers!
     inhibit_all_warnings!
 
     pod 'Hi-Home-Module', :path=>"../Hi-Home-Module"
@@ -13,7 +13,8 @@ target 'Hi-Swift-Union' do
     pod 'Hi-Kit-Module', :path=>"../Hi-Kit-Module"
     pod 'Hi-Helper-Module', :path=>"../Hi-Helper-Module"
     
-    pod 'Hi-Router-Module', :path=>"../Hi-Router-Module"
+#    pod 'Hi-Router-Module', :path=>"../Hi-Router-Module"
+    pod 'Hi-Router-Module', '0.1.0'
     pod 'Hi-Network-Module', :path=>"../Hi-Network-Module"
 
     pod 'MBProgressHUD', '~> 1.1.0'
@@ -23,5 +24,6 @@ target 'Hi-Swift-Union' do
     pod 'Moya'
     pod "MJRefresh"
     pod "Kingfisher" #, '5.14.1'
+    pod "HandyJSON"
     
 end

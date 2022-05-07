@@ -23,6 +23,12 @@
     "Hi-Personal-Module/**/*.xcassets"
   ],
   "dependencies": {
+    "Hi-Network-Module": [
+
+    ],
+    "Hi-Helper-Module": [
+
+    ],
     "Hi-Router-Module": [
 
     ],
@@ -30,6 +36,12 @@
 
     ],
     "SnapKit": [
+
+    ],
+    "HandyJSON": [
+
+    ],
+    "Alamofire": [
 
     ]
   }

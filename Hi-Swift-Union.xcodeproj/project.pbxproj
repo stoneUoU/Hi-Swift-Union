@@ -14,6 +14,7 @@
 		8ED84058281A8E7600562B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED84057281A8E7600562B77 /* ViewController.swift */; };
 		8ED8405D281A8E7700562B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED8405C281A8E7700562B77 /* Assets.xcassets */; };
 		8ED84060281A8E7700562B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED8405E281A8E7700562B77 /* LaunchScreen.storyboard */; };
+		8EFFDA072826656D000EA7D6 /* HiOCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFFDA062826656D000EA7D6 /* HiOCFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		8ED8405C281A8E7700562B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ED8405F281A8E7700562B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ED84061281A8E7700562B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EFFDA042826656C000EA7D6 /* Hi-Swift-Union-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hi-Swift-Union-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EFFDA052826656D000EA7D6 /* HiOCFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiOCFile.h; sourceTree = "<group>"; };
+		8EFFDA062826656D000EA7D6 /* HiOCFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiOCFile.m; sourceTree = "<group>"; };
 		DACD9CD908896C5AE289F1D0 /* Pods_Hi_Swift_Union.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hi_Swift_Union.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AB0FD431E3F5F379F77619 /* Pods-Hi-Swift-Union.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Swift-Union.debug.xcconfig"; path = "Target Support Files/Pods-Hi-Swift-Union/Pods-Hi-Swift-Union.debug.xcconfig"; sourceTree = "<group>"; };
 		F87BFECB31F0C95596EA25D3 /* Pods-Hi-Swift-Union.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hi-Swift-Union.release.xcconfig"; path = "Target Support Files/Pods-Hi-Swift-Union/Pods-Hi-Swift-Union.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +87,9 @@
 				8E533B2D281BB669002455BB /* HiTabbar */,
 				8ED84067281A905D00562B77 /* Supporting Files */,
 				8ED84057281A8E7600562B77 /* ViewController.swift */,
+				8EFFDA052826656D000EA7D6 /* HiOCFile.h */,
+				8EFFDA062826656D000EA7D6 /* HiOCFile.m */,
+				8EFFDA042826656C000EA7D6 /* Hi-Swift-Union-Bridging-Header.h */,
 			);
 			path = "Hi-Swift-Union";
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				TargetAttributes = {
 					8ED8404F281A8E7600562B77 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -223,6 +231,7 @@
 			files = (
 				8ED84058281A8E7600562B77 /* ViewController.swift in Sources */,
 				8E533B2F281BB68C002455BB /* HiTabBar.swift in Sources */,
+				8EFFDA072826656D000EA7D6 /* HiOCFile.m in Sources */,
 				8ED84054281A8E7600562B77 /* AppDelegate.swift in Sources */,
 				8E533B35281BD11E002455BB /* HiTabbarViewController.swift in Sources */,
 			);
@@ -364,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
@@ -382,6 +392,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.Hi-Swift-Union";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi-Swift-Union/Hi-Swift-Union-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
@@ -411,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.hsa.Hi-Swift-Union";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hi-Swift-Union/Hi-Swift-Union-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

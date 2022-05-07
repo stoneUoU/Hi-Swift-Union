@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - HandyJSON (5.0.2)
   - Hi-Helper-Module (0.1.0):
     - Hi-Router-Module
     - MBProgressHUD
@@ -12,13 +13,18 @@ PODS:
     - Hi-Helper-Module
     - Hi-Router-Module
     - Kingfisher
+    - MJRefresh
     - SnapKit
   - Hi-Network-Module (0.1.0):
     - Alamofire
     - Moya
     - SwiftyJSON
   - Hi-Personal-Module (0.1.0):
+    - Alamofire
+    - HandyJSON
+    - Hi-Helper-Module
     - Hi-Kit-Module
+    - Hi-Network-Module
     - Hi-Router-Module
     - SnapKit
   - Hi-Router-Module (0.1.0)
@@ -36,6 +42,7 @@ PODS:
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - HandyJSON
   - Hi-Helper-Module (from `../Hi-Helper-Module`)
   - Hi-Home-Module (from `../Hi-Home-Module`)
   - Hi-Kit-Module (from `../Hi-Kit-Module`)
@@ -53,6 +60,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - HandyJSON
     - IQKeyboardManager
     - Kingfisher
     - MBProgressHUD
@@ -78,11 +86,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Hi-Helper-Module: 4314df10a30324d122eaa253784b5240741fc9e1
   Hi-Home-Module: ce664c11e34722495b998853601228ddbf7ebdb3
-  Hi-Kit-Module: 53107f4cd9ab25e74e1fac8bc21ff1f4f9b679a3
+  Hi-Kit-Module: 597b002eccac2817ea02778e0e3d4b13d658e307
   Hi-Network-Module: 059bbadd661f31456da4a64b575e5566e9312bf2
-  Hi-Personal-Module: 18d39c9714b46047768bc905626dcfa2a639fa52
+  Hi-Personal-Module: c76ee741f88fa076977cd6050d143e92d6110e2f
   Hi-Router-Module: 13474c2e498b7fc64919328109943169ed7ea482
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
@@ -93,6 +102,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 1e90ea3ed521f2378b48d1b48573b5d86f43b152
+PODFILE CHECKSUM: a8480d325eed2874bd9cdfaddef69d1a9fa548ef
 
 COCOAPODS: 1.11.3

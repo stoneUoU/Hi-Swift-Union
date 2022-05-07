@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Hi-Swift-Union/Pods-Hi-Swift-Union-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
 ${BUILT_PRODUCTS_DIR}/Hi-Helper-Module/Hi_Helper_Module.framework
 ${BUILT_PRODUCTS_DIR}/Hi-Home-Module/Hi_Home_Module.framework
 ${BUILT_PRODUCTS_DIR}/Hi-Kit-Module/Hi_Kit_Module.framework
