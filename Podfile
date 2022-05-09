@@ -67,4 +67,14 @@ end
 # HiTargetClass.fetchTarget();
 
 # OC调Swift
+# open class HiTargetHelper: NSObject {
+#   @objc open class func bundledImage(named name: String,moduled module:String) -> UIImage {
+#
+#   }
+# }
+
+# s.dependency 'Hi-Target-Module'
+# import <Hi_Target_Module/Hi_Target_Module-Swift.h>
+
+# [HiTargetHelper bundledImageWithNamed:@" " moduled:@" "];
 
