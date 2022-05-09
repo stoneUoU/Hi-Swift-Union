@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of Hi-Home-Module.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/linlei/Hi-Home-Module",
+  "homepage": "https://github.com/stoneUoU/Hi-Home-Module",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "linlei": "stoneuou@163.com"
   },
   "source": {
-    "git": "https://github.com/linlei/Hi-Home-Module.git",
+    "git": "https://github.com/stoneUoU/Hi-Home-Module.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -26,15 +26,21 @@
   },
   "dependencies": {
     "Hi-Router-Module": [
-
+      "0.2.0"
     ],
     "Hi-Kit-Module": [
+
+    ],
+    "Hi-Helper-Module": [
 
     ],
     "SnapKit": [
 
     ],
     "SwiftyJSON": [
+
+    ],
+    "MBProgressHUD": [
 
     ]
   }

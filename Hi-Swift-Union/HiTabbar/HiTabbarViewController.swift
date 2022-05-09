@@ -34,8 +34,8 @@ class HiTabbarViewController: UITabBarController {
         
         if let homeVC = HiRouter.shared.viewController("home://home"),
            let personalVC = HiRouter.shared.viewController("personal://personal") {
-            self.addViewController(homeVC, "首页", "tabbar_home")
-            self.addViewController(personalVC, "我的", "tabbar_mine")
+            self.addViewController(homeVC, "首页", "hi_tabbar_home")
+            self.addViewController(personalVC, "我的", "hi_tabbar_mine")
         }
     }
     

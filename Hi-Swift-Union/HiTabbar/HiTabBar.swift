@@ -35,20 +35,20 @@ class HiTabBar: UITabBar {
     
     @objc lazy var qrBgImageView: UIImageView = {
         let qrBgImageView = UIImageView.init()
-        qrBgImageView.image = UIImage.init(named:"tabbar_middle_cert_shape")
+        qrBgImageView.image = UIImage.init(named:"hi_tabbar_middle_cert_shape")
         return qrBgImageView
     }()
     
     @objc lazy var leftShadowView: UIView = {
         let leftShadowView = UIView.init(frame:CGRect.init(x: 0, y: -4, width: (HiSCREENWIDTH - middleButtonWidth)/2, height: 8.0));
-        let uiimage:UIImage = UIImage.init(named: "ylz_tabbar_custom_line")!
+        let uiimage:UIImage = UIImage.init(named: "hi_tabbar_custom_line")!
         leftShadowView.layer.contents = uiimage.cgImage;
         return leftShadowView
     }()
     
     @objc lazy var rightShadowView: UIView = {
         let rightShadowView = UIView.init(frame:CGRect.init(x: (HiSCREENWIDTH - middleButtonWidth)/2+middleButtonWidth, y: -4, width: (HiSCREENWIDTH - middleButtonWidth)/2, height: 8.0));
-        let uiimage:UIImage = UIImage.init(named: "ylz_tabbar_custom_line")!
+        let uiimage:UIImage = UIImage.init(named: "hi_tabbar_custom_line")!
         rightShadowView.layer.contents = uiimage.cgImage;
         return rightShadowView
     }()

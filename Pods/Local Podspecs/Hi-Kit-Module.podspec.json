@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of Hi-Kit-Module.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/linlei/Hi-Kit-Module",
+  "homepage": "https://github.com/stoneUoU/Hi-Kit-Module",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "linlei": "stoneuou@163.com"
   },
   "source": {
-    "git": "https://github.com/linlei/Hi-Kit-Module.git",
+    "git": "https://github.com/stoneUoU/Hi-Kit-Module.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -26,10 +26,7 @@
   },
   "dependencies": {
     "Hi-Router-Module": [
-
-    ],
-    "Hi-Helper-Module": [
-
+      "0.2.0"
     ],
     "SnapKit": [
 

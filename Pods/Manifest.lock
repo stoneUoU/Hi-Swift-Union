@@ -2,16 +2,18 @@ PODS:
   - Alamofire (4.9.1)
   - HandyJSON (5.0.2)
   - Hi-Helper-Module (0.1.0):
-    - Hi-Router-Module
+    - Hi-Kit-Module
+    - Hi-Router-Module (= 0.2.0)
     - MBProgressHUD
   - Hi-Home-Module (0.1.0):
+    - Hi-Helper-Module
     - Hi-Kit-Module
-    - Hi-Router-Module
+    - Hi-Router-Module (= 0.2.0)
+    - MBProgressHUD
     - SnapKit
     - SwiftyJSON
   - Hi-Kit-Module (0.1.0):
-    - Hi-Helper-Module
-    - Hi-Router-Module
+    - Hi-Router-Module (= 0.2.0)
     - Kingfisher
     - MJRefresh
     - SnapKit
@@ -25,11 +27,13 @@ PODS:
     - Hi-Helper-Module
     - Hi-Kit-Module
     - Hi-Network-Module
-    - Hi-Router-Module
+    - Hi-Router-Module (= 0.2.0)
+    - Masonry
     - SnapKit
-  - Hi-Router-Module (0.1.0)
+  - Hi-Router-Module (0.2.0)
   - IQKeyboardManager (6.4.2)
   - Kingfisher (4.10.1)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.7.5)
   - Moya (13.0.1):
@@ -38,6 +42,7 @@ PODS:
     - Alamofire (~> 4.1)
     - Result (~> 4.1)
   - Result (4.1.0)
+  - Reveal-SDK (4)
   - SnapKit (4.0.1)
   - SwiftyJSON (4.3.0)
 
@@ -48,12 +53,14 @@ DEPENDENCIES:
   - Hi-Kit-Module (from `../Hi-Kit-Module`)
   - Hi-Network-Module (from `../Hi-Network-Module`)
   - Hi-Personal-Module (from `../Hi-Personal-Module`)
-  - Hi-Router-Module (from `../Hi-Router-Module`)
+  - Hi-Router-Module (= 0.2.0)
   - IQKeyboardManager (= 6.4.2)
   - Kingfisher
+  - Masonry
   - MBProgressHUD (~> 1.1.0)
   - MJRefresh
   - Moya
+  - Reveal-SDK (~> 4)
   - SnapKit (~> 4.0.0)
   - SwiftyJSON (~> 4.0)
 
@@ -63,12 +70,16 @@ SPEC REPOS:
     - HandyJSON
     - IQKeyboardManager
     - Kingfisher
+    - Masonry
     - MBProgressHUD
     - MJRefresh
     - Moya
     - Result
+    - Reveal-SDK
     - SnapKit
     - SwiftyJSON
+  https://github.com/stoneUoU/Hi-Swift-Repo.git:
+    - Hi-Router-Module
 
 EXTERNAL SOURCES:
   Hi-Helper-Module:
@@ -81,27 +92,27 @@ EXTERNAL SOURCES:
     :path: "../Hi-Network-Module"
   Hi-Personal-Module:
     :path: "../Hi-Personal-Module"
-  Hi-Router-Module:
-    :path: "../Hi-Router-Module"
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  Hi-Helper-Module: 4314df10a30324d122eaa253784b5240741fc9e1
-  Hi-Home-Module: ce664c11e34722495b998853601228ddbf7ebdb3
-  Hi-Kit-Module: 597b002eccac2817ea02778e0e3d4b13d658e307
-  Hi-Network-Module: 059bbadd661f31456da4a64b575e5566e9312bf2
-  Hi-Personal-Module: c76ee741f88fa076977cd6050d143e92d6110e2f
-  Hi-Router-Module: 13474c2e498b7fc64919328109943169ed7ea482
+  Hi-Helper-Module: 5db7e970886dab8488f6063aa333fdf87a66d051
+  Hi-Home-Module: 4571dfb419bce512860efe0eb8af67c8d93065ac
+  Hi-Kit-Module: 8c2baf6477bae75a13bf2cbb2886724efb33d2e0
+  Hi-Network-Module: c331325869e4206ef1a540f84f0507a524f557ad
+  Hi-Personal-Module: 041267f0200f926d7a08415cdbfbc7d17a6c959e
+  Hi-Router-Module: bca67cf8b479bfada30816b6da691004baa62d9f
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reveal-SDK: 178c927f1a3230648d3a92b96f6e730a35b2750a
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: a8480d325eed2874bd9cdfaddef69d1a9fa548ef
+PODFILE CHECKSUM: f2877869b33ef5c21bad402edee8af31ddea933d
 
 COCOAPODS: 1.11.3

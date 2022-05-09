@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of Hi-Personal-Module.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/linlei/Hi-Personal-Module",
+  "homepage": "https://github.com/stoneUoU/Hi-Personal-Module",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,16 +12,18 @@
     "linlei": "stoneuou@163.com"
   },
   "source": {
-    "git": "https://github.com/linlei/Hi-Personal-Module.git",
+    "git": "https://github.com/stoneUoU/Hi-Personal-Module.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "Hi-Personal-Module/Classes/**/*.{h,m,swift}",
-  "resources": [
-    "Hi-Personal-Module/**/*.xcassets"
-  ],
+  "resource_bundles": {
+    "Hi-Personal-Module": [
+      "Hi-Personal-Module/Resource/*.{storyboard,xib,xcassets,json}"
+    ]
+  },
   "dependencies": {
     "Hi-Network-Module": [
 
@@ -30,12 +32,15 @@
 
     ],
     "Hi-Router-Module": [
-
+      "0.2.0"
     ],
     "Hi-Kit-Module": [
 
     ],
     "SnapKit": [
+
+    ],
+    "Masonry": [
 
     ],
     "HandyJSON": [

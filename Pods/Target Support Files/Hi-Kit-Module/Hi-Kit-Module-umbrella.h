@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "HiOCAssetsHelper.h"
+#import "HiAlignmentLabel.h"
 #import "HiRefreshFooter.h"
 #import "HiRefreshHeader.h"
 
