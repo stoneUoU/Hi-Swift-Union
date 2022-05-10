@@ -19,6 +19,8 @@ PODS:
     - SnapKit
   - Hi-Network-Module (0.1.0):
     - Alamofire
+    - Hi-Helper-Module
+    - MBProgressHUD
     - Moya
     - SwiftyJSON
   - Hi-Personal-Module (0.1.0):
@@ -99,7 +101,7 @@ SPEC CHECKSUMS:
   Hi-Helper-Module: 5db7e970886dab8488f6063aa333fdf87a66d051
   Hi-Home-Module: 4571dfb419bce512860efe0eb8af67c8d93065ac
   Hi-Kit-Module: 8c2baf6477bae75a13bf2cbb2886724efb33d2e0
-  Hi-Network-Module: c331325869e4206ef1a540f84f0507a524f557ad
+  Hi-Network-Module: 3dd6a45dfaef042cd0649bb7ffc9ae092b3b1e53
   Hi-Personal-Module: 041267f0200f926d7a08415cdbfbc7d17a6c959e
   Hi-Router-Module: bca67cf8b479bfada30816b6da691004baa62d9f
   IQKeyboardManager: b41e0a4943fbac4c11a239d31a688667675f962e
@@ -113,6 +115,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: f2877869b33ef5c21bad402edee8af31ddea933d
+PODFILE CHECKSUM: 4a9835203e956d468e9d6bff08424e6d1ff0d126
 
 COCOAPODS: 1.11.3

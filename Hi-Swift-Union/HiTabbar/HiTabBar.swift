@@ -122,12 +122,17 @@ class HiTabBar: UITabBar {
     }
     
     func swiftClassFromString(className: String) -> AnyClass! {
-        // get the project name
-        if  let appName: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String? {
-            let classStringName = appName + "." + className
-            return NSClassFromString(classStringName)
+        //1、获swift中的命名空间名
+        var name = Bundle.main.object(forInfoDictionaryKey: "CFBundleExecutable") as? String
+        //2、如果包名中有'-'横线这样的字符，在拿到包名后，还需要把包名的'-'转换成'_'下横线
+        name = name?.replacingOccurrences(of: "-", with: "_")
+        //3、拼接命名空间和类名，”包名.类名“
+        let fullClassName = name! + "." + className
+        //通过NSClassFromString获取到最终的类，由于NSClassFromString返回的是AnyClass
+        guard let classType = NSClassFromString(fullClassName) else{
+            fatalError("转换失败")
         }
-        return nil;
+        return classType
     }
 
     required init?(coder aDecoder: NSCoder) {

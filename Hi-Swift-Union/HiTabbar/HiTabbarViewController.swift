@@ -16,27 +16,37 @@ enum HiTabIndex:Int {
 
 class HiTabbarViewController: UITabBarController {
     
-//    @objc lazy var tab: HiTabBar = {
-//        let tab = HiTabBar.init(frame: .zero, tabbarBtnNum: 3)
-//        return tab
-//    }()
+    @objc lazy var hiTabbar: HiTabBar = {
+        let hiTabbar = HiTabBar.init(frame: .zero, tabbarBtnNum: 3)
+        return hiTabbar
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBar.isTranslucent = true;
         self.tabBar.barTintColor = UIColor.white;
         self.tabBar.backgroundColor = UIColor.color_HexStr("#F7F9FD");
+        if #available(iOS 13, *) {
+            let appearance = self.tabBar.standardAppearance.copy()
+            appearance.backgroundImage = UIImage.hi_color(hiColor: .clear)
+            appearance.shadowImage = UIImage.hi_color(hiColor: .clear)
+            self.tabBar.standardAppearance = appearance
+        } else {
+            self.tabBar.backgroundImage = UIImage.hi_color(hiColor: .clear)
+            self.tabBar.shadowImage = UIImage.hi_color(hiColor: .clear)
+        }
+        
         self.setUI()
         self.addObserver();
     }
     
     private func setUI() {
-        
         if let homeVC = HiRouter.shared.viewController("home://home"),
            let personalVC = HiRouter.shared.viewController("personal://personal") {
             self.addViewController(homeVC, "首页", "hi_tabbar_home")
             self.addViewController(personalVC, "我的", "hi_tabbar_mine")
         }
+//        self.setupCenterTab(withCenterImage: "hi_tabbar_middle_cert", middleVC: UIViewController());
     }
     
     func addObserver() {
@@ -59,7 +69,17 @@ class HiTabbarViewController: UITabBarController {
             ], for: .selected)
         addChild(navVC)
     }
-    
+    func setupCenterTab(withCenterImage centerImage:String, middleVC: UIViewController?) {
+        if middleVC != nil {
+            var navi: UINavigationController = UINavigationController()
+            if let middleVC = middleVC {
+                navi = UINavigationController(rootViewController: middleVC)
+            }
+            self.addChild(navi);
+        }
+        self.hiTabbar.qrImageView.image = UIImage.init(named: centerImage);
+        self.setValue(self.hiTabbar, forKey: "tabBar");
+    }
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
     }
