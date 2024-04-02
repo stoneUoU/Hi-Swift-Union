@@ -26,6 +26,7 @@ target 'Hi-Swift-Union' do
     pod "Kingfisher" #, '5.14.1'
     pod "HandyJSON"
     pod "Masonry"
+    pod "YYModel"
     pod 'Reveal-SDK','~>4', :configurations => ['Debug']
     
 end
