@@ -9,6 +9,7 @@ import UIKit
 import Hi_Router_Module
 import Hi_Home_Module
 import Hi_Personal_Module
+import HSA_NetEncryption_iOS
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // register
-        UIImage.initializeMethod();
+//        UIImage.initializeMethod();
         HiHomeModule.registerPages();
         HiPersonalModule.registerPages();
-        
+        JITMiddleWareSDKHelper.sharedInstance()?.initSDK();
         self.initWindow();
         // Override point for customization after application launch.
         return true

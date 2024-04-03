@@ -1,6 +1,8 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/stoneUoU/Hi-Swift-Repo.git'
+source 'https://i58yaw.edtsoft.com/gjybfwpt/hsa-ios/HSARepo.git'
+
 platform :ios, '9.0'
 
 target 'Hi-Swift-Union' do
@@ -20,15 +22,18 @@ target 'Hi-Swift-Union' do
     pod 'MBProgressHUD', '~> 1.1.0'
     pod 'SnapKit', '~> 4.0.0'
     pod 'IQKeyboardManager', '6.4.2'
-    pod 'SwiftyJSON', '~> 4.0'
+    
     pod 'Moya'
     pod "MJRefresh"
     pod "Kingfisher" #, '5.14.1'
-    pod "HandyJSON"
     pod "Masonry"
+    pod "HandyJSON"
+    pod "ObjectMapper"
     pod "YYModel"
+    pod 'KakaJSON', '~> 1.1.2'
+    pod 'SwiftyJSON', '~> 4.0'
     pod 'Reveal-SDK','~>4', :configurations => ['Debug']
-    
+    pod 'HSA-NetEncryption-iOS', "5.0.1"
 end
 
 # Swift调OC

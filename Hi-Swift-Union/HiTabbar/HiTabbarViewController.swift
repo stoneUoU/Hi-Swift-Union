@@ -43,8 +43,8 @@ class HiTabbarViewController: UITabBarController {
     private func setUI() {
         if let homeVC = HiRouter.shared.viewController("home://home"),
            let personalVC = HiRouter.shared.viewController("personal://personal") {
-            self.addViewController(homeVC, "首页", "hi_tabbar_home")
-            self.addViewController(personalVC, "我的", "hi_tabbar_mine")
+            self.addViewController(personalVC, "首页", "hi_tabbar_home")
+            self.addViewController(homeVC, "我的", "hi_tabbar_mine")
         }
 //        self.setupCenterTab(withCenterImage: "hi_tabbar_middle_cert", middleVC: UIViewController());
     }
