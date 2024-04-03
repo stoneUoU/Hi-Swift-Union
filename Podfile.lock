@@ -6,8 +6,10 @@ PODS:
     - Hi-Router-Module (= 0.2.0)
     - MBProgressHUD
   - Hi-Home-Module (0.1.0):
+    - HandyJSON
     - Hi-Helper-Module
     - Hi-Kit-Module
+    - Hi-Network-Module
     - Hi-Router-Module (= 0.2.0)
     - MBProgressHUD
     - SnapKit
@@ -103,7 +105,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Hi-Helper-Module: 5db7e970886dab8488f6063aa333fdf87a66d051
-  Hi-Home-Module: 4571dfb419bce512860efe0eb8af67c8d93065ac
+  Hi-Home-Module: 1ef9a99ff36fcabf95dc4e0c2c134d0376c06ea9
   Hi-Kit-Module: 8c2baf6477bae75a13bf2cbb2886724efb33d2e0
   Hi-Network-Module: 3dd6a45dfaef042cd0649bb7ffc9ae092b3b1e53
   Hi-Personal-Module: dff2f5efd4937933bbc00bd891ee1b8ff8e6df61
